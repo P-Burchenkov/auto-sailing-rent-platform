@@ -1,15 +1,79 @@
-@import-normalize; /* bring in normalize.css styles */
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/manrope-v15-latin-regular.ttf');
+  src: url('assets/fonts/manrope-v15-latin-regular.woff2') format('woff2'),
+    url('assets/fonts/manrope-v15-latin-regular.ttf') format('truetype');
+}
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  src: url('assets/fonts/manrope-v15-latin-500.woff2') format('woff2'),
+    url('assets/fonts/manrope-v15-latin-500.ttf') format('truetype');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  src: url('assets/fonts/manrope-v15-latin-600.woff2') format('woff2'),
+    url('assets/fonts/manrope-v15-latin-600.ttf') format('truetype');
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body {
+  background-color: #ffffff;
+  background-size: auto 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  color: #121417;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+}
+button {
+  outline: none;
+}
+button:hover {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
 }
