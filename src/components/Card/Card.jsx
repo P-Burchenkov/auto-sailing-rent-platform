@@ -19,6 +19,8 @@ import {
 import CarDetails from 'components/CarDetails';
 import sprite from '../../assets/sprite.svg';
 
+import errorImage from '../../assets/images/errorImage.jpg';
+
 import {
   addToFavoriteCars,
   changeFavorite,
@@ -28,6 +30,7 @@ import { togleFavorite } from 'httpRequests';
 
 const Card = ({ data }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   const {
     id,
@@ -69,7 +72,14 @@ const Card = ({ data }) => {
   return (
     <CardContainer>
       <ImageComtainer>
-        <Image src={img} alt={`${make} ${model}`} width={274} />
+        <Image
+          src={isError ? errorImage : img}
+          alt={`${make} ${model}`}
+          width={274}
+          onError={e => {
+            setIsError(true);
+          }}
+        />
       </ImageComtainer>
       <CardTitleWrapper>
         <CardTitle>
