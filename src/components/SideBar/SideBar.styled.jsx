@@ -10,12 +10,10 @@ export const SideBarWrapper = styled.div`
 `;
 
 export const MainNav = styled.nav`
-  padding: 24px 0px;
+  padding: 24px 72px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  align-items: center;
-  justify-content: center;
+  gap: 28px;
 `;
 
 export const Nav = styled(NavLink)`

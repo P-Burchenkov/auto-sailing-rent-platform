@@ -3,11 +3,12 @@ import colors from 'utils/colorsVariables';
 
 export const HeaderWrapper = styled.header`
   width: 100%;
+
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: ${colors.buttonColor};
-  padding: 12px 24px;
+  padding: 12px 72px;
   margin: 0px auto;
 `;
 
