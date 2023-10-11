@@ -9,8 +9,14 @@ export const BtnIcon = styled.button`
   padding: 0;
   border: none;
   background-color: transparent;
+  transition: stroke 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   stroke: ${props => (props?.isFavorite ? colors.accentColor : colors.white)};
-  fill: ${props => (props?.isFavorite ? colors.accentColor : 'transparent')};
+  color: ${props => (props?.isFavorite ? colors.accentColor : 'transparent')};
+
+  &:hover,
+  &:focus {
+    stroke: ${props => (props?.isFavorite ? colors.white : colors.accentColor)};
+  }
 `;
 
 export const Svg = styled.svg`

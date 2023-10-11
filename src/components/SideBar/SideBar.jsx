@@ -1,13 +1,12 @@
-import { MainNav, SideBarWrapper } from './SideBar.styled';
-import { NavLink } from 'react-router-dom';
+import { MainNav, SideBarWrapper, Nav } from './SideBar.styled';
 
 const SideBar = () => {
   return (
     <SideBarWrapper>
       <MainNav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/catalog">Catalog</NavLink>
-        <NavLink to="/favorite">Favorite</NavLink>
+        <Nav to="/">Home</Nav>
+        <Nav to="/catalog">Catalog</Nav>
+        <Nav to="/favorite">Favorite</Nav>
       </MainNav>
     </SideBarWrapper>
   );

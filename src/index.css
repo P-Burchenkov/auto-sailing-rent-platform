@@ -1,4 +1,4 @@
-@import-normalize;
+@import-sanitize;
 
 @font-face {
   font-display: swap;
@@ -32,11 +32,11 @@ code {
     monospace;
 }
 
-*,
+/* *,
 *::before,
 *:after {
   box-sizing: border-box;
-}
+} */
 
 body {
   background-color: #ffffff;

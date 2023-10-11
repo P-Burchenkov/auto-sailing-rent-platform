@@ -23,6 +23,8 @@ export const Btn = styled.button`
   font-weight: 500;
   line-height: 150%;
   text-decoration-line: underline;
+  background-color: transparent;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   color: ${colors.buttonColor};
   &:hover,
   &:focus {

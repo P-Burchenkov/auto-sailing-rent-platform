@@ -10,8 +10,10 @@ export const Btn = styled.button`
   border: none;
   background-color: transparent;
   stroke: ${colors.mainText};
+  transition: stroke 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
+  &:hover,
+  &:focus {
     stroke: ${colors.accentColor};
   }
 `;

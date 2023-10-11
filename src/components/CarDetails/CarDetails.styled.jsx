@@ -71,6 +71,7 @@ export const LinkButton = styled.a`
 
   border-radius: 12px;
   border: none;
+  outline: none;
   padding: 12px 24px;
 
   font-size: 14px;
@@ -78,8 +79,10 @@ export const LinkButton = styled.a`
   line-height: 143%;
   color: ${colors.white};
   background-color: ${colors.buttonColor};
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
+  &:hover,
+  &focus {
     background-color: ${colors.accentColor};
   }
 `;

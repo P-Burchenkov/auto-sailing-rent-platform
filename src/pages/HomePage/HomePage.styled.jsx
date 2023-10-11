@@ -16,6 +16,7 @@ export const BGContainer = styled.div`
 
 export const SubTitle = styled.p`
   max-width: 700px;
+  margin-bottom: 48px;
 
   color: ${colors.white};
   font-size: 32px;
