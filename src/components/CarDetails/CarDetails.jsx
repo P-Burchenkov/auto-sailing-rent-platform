@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import {
   ImageWrapper,
   Container,
@@ -14,8 +16,11 @@ import {
 import RentalConditions from '../RentalConditions';
 
 import sprite from '../../assets/sprite.svg';
+import errorImage from '../../assets/images/errorImage.jpg';
 
 const CarDetails = ({ data }) => {
+  const [isError, setIsError] = useState(false);
+
   const {
     year,
     make,
@@ -35,7 +40,13 @@ const CarDetails = ({ data }) => {
   return (
     <Container>
       <ImageWrapper>
-        <Image src={img} alt={`${make}${model}`} />{' '}
+        <Image
+          src={isError ? errorImage : img}
+          onError={() => {
+            setIsError(true);
+          }}
+          alt={`${make}${model}`}
+        />{' '}
       </ImageWrapper>
       <Title>
         {make}

@@ -76,7 +76,7 @@ const Card = ({ data }) => {
           src={isError ? errorImage : img}
           alt={`${make} ${model}`}
           width={274}
-          onError={e => {
+          onError={() => {
             setIsError(true);
           }}
         />
