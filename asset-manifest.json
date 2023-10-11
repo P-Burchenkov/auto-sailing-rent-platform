@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/auto-sailing-rent-platform/static/css/main.4e128315.css",
-    "main.js": "/auto-sailing-rent-platform/static/js/main.3f00ecfa.js",
+    "main.css": "/auto-sailing-rent-platform/static/css/main.971159b0.css",
+    "main.js": "/auto-sailing-rent-platform/static/js/main.aa117510.js",
     "static/media/mercedes.jpg": "/auto-sailing-rent-platform/static/media/mercedes.1b814acac8d58f1f5053.jpg",
     "static/media/manrope-v15-latin-500.ttf": "/auto-sailing-rent-platform/static/media/manrope-v15-latin-500.58fccc05dbdac5169469.ttf",
     "static/media/manrope-v15-latin-600.ttf": "/auto-sailing-rent-platform/static/media/manrope-v15-latin-600.cdbefcd69d8c4412063c.ttf",
@@ -11,11 +11,11 @@
     "static/media/manrope-v15-latin-500.woff2": "/auto-sailing-rent-platform/static/media/manrope-v15-latin-500.b6bf3db6256270076d37.woff2",
     "static/media/sprite.svg": "/auto-sailing-rent-platform/static/media/sprite.cdeae2f9747a832823a153084cd58b87.svg",
     "index.html": "/auto-sailing-rent-platform/index.html",
-    "main.4e128315.css.map": "/auto-sailing-rent-platform/static/css/main.4e128315.css.map",
-    "main.3f00ecfa.js.map": "/auto-sailing-rent-platform/static/js/main.3f00ecfa.js.map"
+    "main.971159b0.css.map": "/auto-sailing-rent-platform/static/css/main.971159b0.css.map",
+    "main.aa117510.js.map": "/auto-sailing-rent-platform/static/js/main.aa117510.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e128315.css",
-    "static/js/main.3f00ecfa.js"
+    "static/css/main.971159b0.css",
+    "static/js/main.aa117510.js"
   ]
 }
