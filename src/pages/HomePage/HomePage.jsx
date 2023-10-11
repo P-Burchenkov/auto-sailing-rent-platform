@@ -1,7 +1,11 @@
+import { BGContainer, SubTitle } from './HomePage.styled';
+
 const HomePage = () => {
   return (
     <>
-      <div>HomePage</div>
+      <BGContainer>
+        <SubTitle>Wellcome to uour service for renting cars!!!</SubTitle>
+      </BGContainer>
     </>
   );
 };

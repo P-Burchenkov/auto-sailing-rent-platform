@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import colors from 'utils/colorsVariables';
 
 export const Btn = styled.button`
-  width: 100%;
+  width: ${props => props?.width || '100%'};
   border-radius: 12px;
   border: none;
   padding: 12px 24px;
@@ -13,8 +13,7 @@ export const Btn = styled.button`
   color: ${colors.white};
   background-color: ${colors.buttonColor};
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: ${colors.accentColor};
   }
 `;

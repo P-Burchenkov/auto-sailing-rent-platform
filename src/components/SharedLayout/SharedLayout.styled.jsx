@@ -25,7 +25,6 @@ export const Main = styled.main`
 `;
 
 export const ContentPageWrapper = styled.div`
-  flex-shrink: shrink;
   width: 1224px;
   padding: 24px;
 `;

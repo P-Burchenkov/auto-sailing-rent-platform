@@ -1,3 +1,5 @@
+@import-normalize;
+
 @font-face {
   font-display: swap;
   font-family: 'Manrope';
@@ -28,6 +30,12 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
 }
 
 body {

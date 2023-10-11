@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 import colors from 'utils/colorsVariables';
-import mq from 'utils/mediaQuery';
 
 export const SideBarWrapper = styled.div`
   width: 240px;

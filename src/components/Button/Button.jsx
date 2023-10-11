@@ -1,8 +1,8 @@
-const { Btn } = require('./Button.styled');
+import { Btn } from './Button.styled';
 
-const Button = ({ type, title, onclick }) => {
+const Button = ({ type, title, onClick, width }) => {
   return (
-    <Btn type={type} onClick={onclick}>
+    <Btn type={type} onClick={onClick} width={width}>
       {title}
     </Btn>
   );

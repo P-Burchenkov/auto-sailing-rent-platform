@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom';
-import { Box, Toolbar } from '@mui/material';
 
 import Header from 'components/Header/Header';
 import SideBar from 'components/SideBar';

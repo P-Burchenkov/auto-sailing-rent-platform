@@ -1,5 +1,8 @@
-const FavoritePage = () => {
-  return <div>FavouritePage</div>;
-};
+import styled from '@emotion/styled';
+import colors from 'utils/colorsVariables';
 
-export default FavoritePage;
+export const Notification = styled.p`
+  font-size: 24px;
+  font-weight: 600;
+  color: ${colors.secondaryText05};
+`;

@@ -1,8 +1,10 @@
 import { useDispatch } from 'react-redux';
+import { useState } from 'react';
 
 import Button from 'components/Button';
-import sprite from '../../assets/sprite.svg';
 import ButtonIcon from 'components/ButtonIcon';
+import ButtonClose from 'components/ButtonClose';
+import BasicModal from 'components/BasicModal';
 import {
   CardContainer,
   CardDescription,
@@ -14,14 +16,19 @@ import {
   Price,
   Svg,
 } from './Card.styled';
-import { togleFavorite } from 'httpRequests';
+import CarDetails from 'components/CarDetails';
+import sprite from '../../assets/sprite.svg';
+
 import {
   addToFavoriteCars,
   changeFavorite,
   removeFromFavorite,
 } from 'redux/adverts/slice';
+import { togleFavorite } from 'httpRequests';
 
 const Card = ({ data }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const {
     id,
     year,
@@ -29,20 +36,23 @@ const Card = ({ data }) => {
     model,
     type,
     img,
-    description,
-    fuelConsumption,
-    engineSize,
-    accessories,
     functionalities,
     rentalPrice,
     rentalCompany,
     address,
-    rentalConditions,
     mileage,
     isFavorite,
   } = data;
 
   const dispatch = useDispatch();
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   const onTogleFavorite = async () => {
     if (!isFavorite) {
@@ -91,8 +101,12 @@ const Card = ({ data }) => {
         </Svg>
         {functionalities[0]}
       </CardDescription>
-      <Button title="Learn more" type="button" />
+      <Button title="Learn more" type="button" onClick={openModal} />
       <ButtonIcon onClick={onTogleFavorite} isFavorite={isFavorite} />
+      <BasicModal open={isModalOpen} handleClose={closeModal}>
+        <CarDetails data={data} />
+        <ButtonClose onClick={closeModal} />
+      </BasicModal>
     </CardContainer>
   );
 };
